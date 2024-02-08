@@ -1,0 +1,38 @@
+#include <stddef.h>
+
+/* bst.h */
+
+/*********************************************************************
+    Implements a binary search tree to the folling invariant :
+        1. All tree nodes are binary nodes with two references
+        2. All nodes of the left subtree are less than the root node
+        3. All nodes of the right subtree are greater than the root
+    This gives O(log n) runtime for insertion, search, and deletion operations
+**********************************************************************/
+
+/* opaque type definition */
+typedef struct binary_tree_node btnode;
+
+/* utility func for malloc */
+size_t btnode_size(void);
+
+/* CRUD operations */
+btnode* new_node(int val);
+
+btnode* find(btnode* root, int target);
+
+btnode* insert(btnode* node, int val);
+
+btnode* remove_node(btnode* root, int target);
+
+int free_tree(btnode* root);
+
+/* traversals */
+void print_post_order(btnode* root);
+
+void print_in_order(btnode* root);
+
+void print_pre_order(btnode* root);
+
+btnode* find_min(btnode* root);
+
