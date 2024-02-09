@@ -21,7 +21,7 @@ btnode* new_node(int val);
 
 btnode* find(btnode* root, int target);
 
-btnode* insert(btnode* node, int val);
+btnode* insert(btnode* root, int val);
 
 btnode* remove_node(btnode* root, int target);
 
