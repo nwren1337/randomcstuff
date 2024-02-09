@@ -9,8 +9,7 @@ int main() {
     insert(node, 8);
     insert(node, 10);
     print_in_order(node);
-    if(free_tree(node) == 0) {
-        printf("Cool.\n");
-    }
+    printf("Cool.\n");
+    free_tree(node);
     return 0;
 }

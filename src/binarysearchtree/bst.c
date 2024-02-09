@@ -34,8 +34,10 @@ void print_in_order(btnode* root) {
     }
 }
 
-int free_tree(btnode* root) {
-    //BAD THIS ONLY "WORKS" BECAUSE WE CAN'T INSERT YET
-    free(root);
-    return 0;
+void free_tree(btnode* root) {
+    if (root != NULL) {
+        free_tree(root->left);
+        free_tree(root->right);
+        free(root);
+    }
 }

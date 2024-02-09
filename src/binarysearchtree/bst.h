@@ -25,7 +25,7 @@ btnode* insert(btnode* root, int val);
 
 btnode* remove_node(btnode* root, int target);
 
-int free_tree(btnode* root);
+void free_tree(btnode* root);
 
 /* traversals */
 void print_post_order(btnode* root);
