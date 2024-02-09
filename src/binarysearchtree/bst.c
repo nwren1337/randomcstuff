@@ -12,6 +12,10 @@ size_t btnode_size(void) {
     return sizeof(btnode);
 }
 
+int get(btnode* node) {
+    return node->val;
+}
+
 btnode* new_node(int value) {
     btnode* temp = (btnode*)malloc(btnode_size());
     temp->val = value;
@@ -24,6 +28,14 @@ btnode* insert(btnode* root, int val) {
     if(val < root->val) root->left = insert(root->left, val);
     if(val > root->val) root->right = insert(root->right, val);
     return root;
+}
+
+btnode* find(btnode* root, int target) {
+    if(root == NULL || root->val == target) {
+        return root;
+    }
+    if(target < root->val) return find(root->left, target);
+    else return find(root->right, target); 
 }
 
 bool is_leaf(btnode* node) {

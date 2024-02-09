@@ -12,6 +12,11 @@ int main() {
     print_in_order(node);
     printf("\n");
 
+    /* Test finding a node */
+    btnode* found = NULL;
+    found = find(node, 10);
+    printf("Found : %i\n", get(found));
+
     /* Test removing a single node */
     btnode* node2 = NULL;
     node2 = insert(node2, 5);
