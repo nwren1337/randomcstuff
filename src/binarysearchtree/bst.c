@@ -17,3 +17,9 @@ btnode* new_node(int value) {
     temp->left = temp->right = NULL;
     return temp;
 }
+
+int free_tree(btnode* root) {
+    //BAD THIS ONLY "WORKS" BECAUSE WE CAN'T INSERT YET
+    free(root);
+    return 0;
+}
