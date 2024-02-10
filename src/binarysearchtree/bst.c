@@ -110,6 +110,22 @@ void print_in_order(btnode* root) {
     }
 }
 
+void print_post_order(btnode* root) {
+    if(root != NULL) {
+        print_in_order(root->left); 
+        print_in_order(root->right);
+        printf("%i ", root->val);
+    }
+}
+
+void print_pre_order(btnode* root) {
+    if(root != NULL) {
+        printf("%i ", root->val); 
+        print_in_order(root->left);
+        print_in_order(root->right);
+    }
+}
+
 void free_tree(btnode* root) {
     if (root != NULL) {
         free_tree(root->left);
