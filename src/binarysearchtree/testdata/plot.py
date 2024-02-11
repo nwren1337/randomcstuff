@@ -27,7 +27,7 @@ for test in searching_tests:
 
 
 plt.grid(True)
-plt.xlabel('number of nodes')
+plt.xlabel('number of searches')
 plt.ylabel('time (s)')
 plt.legend(loc='best')
 plt.show()
