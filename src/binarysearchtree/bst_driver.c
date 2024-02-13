@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "bst/bst.h"
 
-int RAND_CAP = 1000000;
+int RAND_CAP = 1073741824;
 
 int get_rand(){
     return rand() % RAND_CAP;
@@ -11,10 +11,14 @@ int get_rand(){
 
 btnode* insert_random_nums(btnode* root, int count) {
     int r = get_rand();
+    int inserted = 1;
     root = insert(root, r);
-    for(int i = 1; i < count; i++) {
+    while (inserted <= count) {
         r = get_rand();
-        insert(root, r);
+        if(find(root, r) == NULL) {
+            insert(root, r);
+            inserted++;
+        }
     }
     return root;
 }
@@ -44,7 +48,7 @@ void emit_result(int num, long double elapsed) {
 void test_search(btnode* root, int max_searches) {
     int step = 2;
     clock_t start_clock, end_clock = 0;
-    for(int i = 1; i <= max_searches; i *= step) {
+    for(int i = 128; i <= max_searches; i *= step) {
         start_clock = clock();
         search_for_random_nums(root, i);
         end_clock = clock();
@@ -55,7 +59,7 @@ void test_search(btnode* root, int max_searches) {
 btnode* test_random_insertion(btnode* root, int max_nodes) {
     int step = 2;
     clock_t start_clock, end_clock = 0;
-    for(int i = 1; i <= max_nodes; i *= step) {
+    for(int i = 268435456; i <= max_nodes; i *= step) {
         free_tree(root);
         root = NULL;
         start_clock = clock();
@@ -86,8 +90,8 @@ btnode* test_sequential_insertion(btnode* root, int max_nodes) {
 int main() {
     /* Test setup */
     srand(time(NULL));
-    int num_nodes = 131072; // 2^17 seems to be the most sequential insert can handle here
-    int num_searches = 32768;
+    int num_nodes = 268435456; // 2^28
+    int num_searches = 134217728; //2^27
     btnode* random_tree = NULL;
     btnode* seq_tree = NULL;
 
@@ -103,13 +107,13 @@ int main() {
 
     /* Sequential insertion tests */
 
-    printf("  \"Sequential Insertion\": {\n");
-    seq_tree = test_sequential_insertion(seq_tree, num_nodes);
-    printf("  },\n");
-    printf("  \"Searching the sequential tree\": {\n" );
-    test_search(seq_tree, num_searches);
-    printf("  }\n}\n");
-    free_tree(seq_tree);
+    // printf("  \"Sequential Insertion\": {\n");
+    // seq_tree = test_sequential_insertion(seq_tree, num_nodes);
+    // printf("  },\n");
+    // printf("  \"Searching the sequential tree\": {\n" );
+    // test_search(seq_tree, num_searches);
+    // printf("  }\n}\n");
+    // free_tree(seq_tree);
 
     return 0;
 }
