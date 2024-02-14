@@ -2,11 +2,12 @@ CC=gcc
 CFLAGS="-I. -O3"
 DEBUG="-I. -gp"
 DEPS = include/bst.h
-OBJ= bst.o bst_driver.o
+OBJDIR=obj
+OBJ= ${OBJDIR}/bst.o ${OBJDIR}/bst_driver.o
 
 OUT=build
 
-%.o: %.c $(DEPS)
+${OBJDIR}/%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 ${OUT}/bst_driver: $(OBJ)
