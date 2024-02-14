@@ -3,14 +3,6 @@
 
 /* avl.h */
 
-/*********************************************************************
-    Implements a binary search tree to the folling invariant :
-        1. All tree nodes are binary nodes with two references
-        2. All nodes of the left subtree are less than the root node
-        3. All nodes of the right subtree are greater than the root
-    This gives O(log n) runtime for insertion, search, and deletion operations
-**********************************************************************/
-
 /* opaque type definition */
 typedef struct avl_tree_node avlnode;
 
