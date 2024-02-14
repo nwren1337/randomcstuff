@@ -3,9 +3,11 @@ import numpy as np
 import json
 import pprint
 
-test_data = json.load(open('tests.json', 'r'))
-big_tree_data = json.load(open('big_tree.json', 'r'))
-optimized_tree_data = json.load(open('optimized_tree.json', 'r'))
+data_folder = "data"
+
+test_data = json.load(open(f'{data_folder}/tests.json', 'r'))
+big_tree_data = json.load(open(f'{data_folder}/big_tree.json', 'r'))
+optimized_tree_data = json.load(open(f'{data_folder}/optimized_tree.json', 'r'))
 
 test_names = [key for key, value in test_data.items()]
 
@@ -46,7 +48,6 @@ opt_y = np.array([value for key, value in optimized.items()])
 xAxis = raw_x
 yAxis = np.around(((raw_y - opt_y) / raw_y) * 100, 2)
 
-print(yAxis)
 plt.bar(xAxis, yAxis, label="Percent improvement of optimization")
 
 
