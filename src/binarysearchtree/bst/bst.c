@@ -31,11 +31,17 @@ btnode* insert(btnode* root, int val) {
 }
 
 btnode* find(btnode* root, int target) {
-    if(root == NULL || root->val == target) {
-        return root;
+    btnode* tmp = root;
+    while(tmp != NULL) {
+        if(target == tmp->val) {
+            return tmp;
+        } else if (target < tmp->val) {
+            tmp = tmp->left;
+        } else {
+            tmp = tmp->right;
+        }
     }
-    if(target < root->val) return find(root->left, target);
-    else return find(root->right, target); 
+    return tmp; 
 }
 
 bool is_leaf(btnode* node) {
