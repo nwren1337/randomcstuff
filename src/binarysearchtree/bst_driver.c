@@ -5,19 +5,26 @@
 
 int RAND_CAP = 1073741824;
 
-int get_rand(){
-    return rand() % RAND_CAP;
+int get_rand(int min, int max){
+    return (rand() % max) + min;
 }
 
 btnode* insert_random_nums(btnode* root, int count) {
-    int r = get_rand();
+    int midpoint = RAND_CAP / 2; // this should result in clean division because we are working with powers of 2
+    int r = midpoint;
     int inserted = 1;
+    bool higher = false;
     root = insert(root, r);
     while (inserted <= count) {
-        r = get_rand();
+        if(higher) {
+            r = get_rand(midpoint + 1, RAND_CAP);
+        } else {
+            r = get_rand(0, midpoint - 1);
+        }
         if(find(root, r) == NULL) {
             insert(root, r);
             inserted++;
+            higher = !higher;
         }
     }
     return root;
@@ -35,7 +42,7 @@ void search_for_random_nums(btnode* root, int count) {
     int searched = 0;
     int r = 0;
     while(searched < count) {
-        r = get_rand();
+        r = get_rand(0, RAND_CAP);
         find(root, r); //return can be ignored, time to complete is what we are testing
         searched++;
     }
