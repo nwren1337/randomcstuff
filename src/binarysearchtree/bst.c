@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "bst.h"
+#include "include/bst.h"
 
 typedef struct binary_tree_node {
     int val;

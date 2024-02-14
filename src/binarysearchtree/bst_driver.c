@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-#include "bst/bst.h"
+#include "include/bst.h"
 
 int RAND_CAP = 1073741824;
 
