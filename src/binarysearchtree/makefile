@@ -1,10 +1,13 @@
 CC=gcc
 CFLAGS="-I. -O3 -march=native"
 DEBUG="-I. -gp"
-DEPS = include/bst.h
 OBJDIR=obj
-OBJ= ${OBJDIR}/bst.o ${OBJDIR}/bst_driver.o
-DEBUGOBJ= ${OBJDIR}/bst_debug.o ${OBJDIR}/bst_driver_debug.o
+DEPS = include/bst.h include/avl.h
+
+BST_OBJ= ${OBJDIR}/bst.o ${OBJDIR}/bst_driver.o
+BST_DEBUGOBJ= ${OBJDIR}/bst_debug.o ${OBJDIR}/bst_driver_debug.o
+
+AVL_OBJ= ${OBJDIR}/avl.o ${OBJDIR}/avl_driver.o
 
 OUTDIR=build
 
@@ -14,11 +17,14 @@ ${OBJDIR}/%.o: %.c $(DEPS)
 ${OBJDIR}/%_debug.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(DEBUG)
 
-${OUTDIR}/bst_driver: $(OBJ)
+${OUTDIR}/bst_driver: $(BST_OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-${OUTDIR}/bst_driver_debug: $(DEBUGOBJ)
+${OUTDIR}/bst_driver_debug: $(BST_DEBUGOBJ)
 	$(CC) -o $@ $^ $(DEBUG)
+
+${OUTDIR}/avl_driver: $(AVL_OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
 
 .PHONY=setup
 
