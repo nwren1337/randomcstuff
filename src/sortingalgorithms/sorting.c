@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 void insertionSort(int arr[], int n) {
     // starting from the second element
     for(int i = 1; i < n; i++) {
@@ -21,7 +23,8 @@ void merge(int arr[], int l, int m, int r) {
     int n2 = r - m;
 
     // create temp arrays
-    int L[n1], R[n2];
+    int *L = malloc(n1 * sizeof(int));
+    int *R = malloc(n2 * sizeof(int));
 
     // copy data to temp arrays
     for (i = 0; i < n1; i++)
@@ -55,6 +58,9 @@ void merge(int arr[], int l, int m, int r) {
         arr[k] = R[j];
         j++; k++;
     }
+
+    free(L);
+    free(R);
 }
 
 void mergeSort(int arr[], int l, int r) {
