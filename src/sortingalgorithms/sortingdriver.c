@@ -1,45 +1,103 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
 #include "include/sorting.h"
 
 void printArray(int arr[], int size) {
+    printf("[");
     for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
+        printf("%d", arr[i]);
+        if (i < size - 1) printf(", ");
     }
-    printf("\n");
+    printf("]\n");
 }
 
-void runSort(char* sortName, int arr[], int size) {
-    printf("%s: \n", sortName);
-    printf("Before: \n");
-    printArray(arr, size);
-
-    if (strcmp(sortName, "Insertion Sort") == 0) {
-        insertionSort(arr, size);
-    } else if (strcmp(sortName, "Merge Sort") == 0) {
-        mergeSort(arr, 0, size - 1);
-    } else if (strcmp(sortName, "Quick Sort") == 0) {
-        quickSort(arr, 0, size - 1);
-    } else {
-        printf("Unknown sort function: %s\n", sortName);
-        return;
+void runSort(char alg, int arr[], int size) {
+    switch (alg) {
+        case 'i': insertionSort(arr, size);      break;
+        case 'm': mergeSort(arr, 0, size - 1);   break;
+        case 'q': quickSort(arr, 0, size - 1);   break;
+        default:
+            fprintf(stderr, "Unknown algorithm: %c\n", alg);
+            return;
     }
-
-    printf("After: \n");
-    printArray(arr, size);
 }
 
-int main() {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int size = sizeof(arr) / sizeof(arr[0]);
+int* readFile(char* filename, size_t* size) {
+    FILE* f = fopen(filename, "rb");
+    if (!f) {
+        perror(filename);
+        return NULL;
+    }
 
-    runSort("Insertion Sort", arr, size);
+    fseek(f, 0, SEEK_END);
+    *size = ftell(f) / sizeof(int);
+    rewind(f);
 
-    int arr2[] = {64, 34, 25, 12, 22, 11, 90}; 
-    runSort("Merge Sort", arr2, size);
+    int* arr = malloc(*size * sizeof(int));
+    if (!arr) {
+        perror("malloc");
+        fclose(f);
+        return NULL;
+    }
 
-    int arr3[] = {64, 34, 25, 12, 22, 11, 90};
-    runSort("Quick Sort", arr3, size);
+    size_t read = fread(arr, sizeof(int), *size, f);
+    if (read != *size) {
+        fprintf(stderr, "%s: expected %zu elements, got %zu\n", filename, *size, read);
+        free(arr);
+        fclose(f);
+        return NULL;
+    }
 
+    fclose(f);
+    return arr;
+}
+
+int main(int argc, char* argv[]) {
+    char algorithm = 0;
+    int quiet = 0;
+    int opt;
+
+    while ((opt = getopt(argc, argv, "a:q")) != -1) {
+        switch (opt) {
+            case 'a':
+                if (algorithm) {
+                    fprintf(stderr, "Error: -a may only be specified once\n");
+                    return 1;
+                }
+                if (optarg[0] != 'i' && optarg[0] != 'm' && optarg[0] != 'q') {
+                    fprintf(stderr, "Error: -a argument must be i, m, or q\n");
+                    return 1;
+                }
+                algorithm = optarg[0];
+                break;
+            case 'q': quiet = 1; break;
+            default:
+                fprintf(stderr, "Usage: %s -a [i|m|q] [-q] <filename>\n", argv[0]);
+                return 1;
+        }
+    }
+
+    if (!algorithm) {
+        fprintf(stderr, "Error: algorithm required (-a [i|m|q])\n");
+        return 1;
+    }
+
+    if (optind >= argc) {
+        fprintf(stderr, "Error: filename required\n");
+        return 1;
+    }
+
+    char* filename = argv[optind];
+
+    size_t size;
+    int* arr = readFile(filename, &size);
+    if (!arr) return 1;
+
+    if (!quiet) { printf("Before:\n"); printArray(arr, size); }
+    runSort(algorithm, arr, size);
+    if (!quiet) { printf("After:\n");  printArray(arr, size); }
+
+    free(arr);
     return 0;
 }
