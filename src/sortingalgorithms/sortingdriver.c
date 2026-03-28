@@ -94,9 +94,9 @@ int main(int argc, char* argv[]) {
     int* arr = readFile(filename, &size);
     if (!arr) return 1;
 
-    if (!quiet) { printf("Before:\n"); printArray(arr, size); }
+    if (!quiet) { printf("Before: "); printArray(arr, size); }
     runSort(algorithm, arr, size);
-    if (!quiet) { printf("After:\n");  printArray(arr, size); }
+    if (!quiet) { printf("After: ");  printArray(arr, size); }
 
     free(arr);
     return 0;
