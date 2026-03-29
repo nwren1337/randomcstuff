@@ -17,7 +17,7 @@ from rich import box
 
 BINARY: str = "./build/srt_driver"
 DATA_DIR: Path = Path("data")
-OUTPUT: str = "testdata/results.json"
+OUTPUT_DIR: str = "testdata"
 
 TIMEOUT_S: int = 120
 MAX_CONCURRENT: int = 4
@@ -111,7 +111,7 @@ async def run_perf(alg: str, filepath: Path, core: int) -> dict:
 
 
 async def benchmark_one(
-    alg: str, data_type: str, size: int, core: int, timeout: int
+    alg: str, data_type: str, size: int, core: int, timeout: int | None
 ) -> dict:
     filepath = DATA_DIR / f"{data_type}_array_{size}.bin"
 
@@ -163,6 +163,8 @@ def make_display(task_states: list[dict], progress: Progress, window: int) -> Gr
                 table.add_row(state["label"], "[red]✗ error[/red]", "")
             case "missing":
                 table.add_row(state["label"], "[dim]missing[/dim]", "")
+            case "cancelled":
+                table.add_row(state["label"], "[dim]cancelled[/dim]", "")
 
     return Group(table, progress)
 
@@ -176,31 +178,39 @@ async def worker(
     rich_progress: Progress,
     progress_task: int,
 ) -> None:
-    while True:
-        item = await queue.get()
-        if item is None:
+    current_idx: int | None = None
+    try:
+        while True:
+            item = await queue.get()
+            if item is None:
+                queue.task_done()
+                break
+            current_idx = item[0]
+            idx, alg, data_type, size = item
+            task_states[idx]["status"] = "running"
+            task_states[idx]["start"] = time.monotonic()
+
+            result = await benchmark_one(alg, data_type, size, core, timeout)
+
+            elapsed = time.monotonic() - task_states[idx]["start"]
+            task_states[idx]["elapsed"] = elapsed
+            task_states[idx]["status"] = result.get("status", "done")
+            results.append((data_type, str(size), ALGORITHM_NAMES[alg], result))
+            rich_progress.advance(progress_task)
             queue.task_done()
-            break
-        idx, alg, data_type, size = item
-        task_states[idx]["status"] = "running"
-        task_states[idx]["start"] = time.monotonic()
-
-        result = await benchmark_one(alg, data_type, size, core, timeout)
-
-        elapsed = time.monotonic() - task_states[idx]["start"]
-        task_states[idx]["elapsed"] = elapsed
-        task_states[idx]["status"] = result.get("status", "done")
-        results.append((data_type, str(size), ALGORITHM_NAMES[alg], result))
-        rich_progress.advance(progress_task)
-        queue.task_done()
+    except asyncio.CancelledError:
+        if current_idx is not None and task_states[current_idx]["status"] == "running":
+            task_states[current_idx]["elapsed"] = time.monotonic() - task_states[current_idx]["start"]
+            task_states[current_idx]["status"] = "cancelled"
+        raise
 
 
-async def main(sizes: list[int], timeout: int = TIMEOUT_S, concurrency: int = MAX_CONCURRENT) -> None:
+async def main(sizes: list[int], data_types: list[str] = DATA_TYPES, algorithms: list[str] = ALGORITHMS, timeout: int | None = TIMEOUT_S, concurrency: int = MAX_CONCURRENT) -> None:
     work_items = [
         (alg, data_type, size)
         for size in sizes
-        for data_type in DATA_TYPES
-        for alg in ALGORITHMS
+        for data_type in data_types
+        for alg in algorithms
     ]
 
     total = len(work_items)
@@ -216,9 +226,9 @@ async def main(sizes: list[int], timeout: int = TIMEOUT_S, concurrency: int = MA
 
     console = Console()
     console.print(f"\nSorting algorithm benchmark")
-    console.print(f"  tasks      : {total}  ({len(sizes)} sizes x {len(DATA_TYPES)} types x {len(ALGORITHMS)} algorithms)")
+    console.print(f"  tasks      : {total}  ({len(sizes)} sizes x {len(data_types)} types x {len(algorithms)} algorithms)")
     console.print(f"  workers    : {concurrency}  (cores 0-{concurrency - 1})")
-    console.print(f"  timeout    : {timeout}s per task")
+    console.print(f"  timeout    : {f'{timeout}s' if timeout is not None else 'none'} per task")
     console.print()
 
     window = min(20, max(4, (shutil.get_terminal_size().lines or 40) - 10))
@@ -227,45 +237,75 @@ async def main(sizes: list[int], timeout: int = TIMEOUT_S, concurrency: int = MA
     progress_task = progress.add_task("", total=total)
 
     queue: asyncio.Queue = asyncio.Queue()
-
     results: list = []
+    worker_tasks: list = []
+    shutdown = asyncio.Event()
+    loop = asyncio.get_running_loop()
 
-    with Live(make_display(task_states, progress, window), refresh_per_second=4, console=console, transient=True) as live:
-        stop = asyncio.Event()
+    def _handle_sigint() -> None:
+        if not shutdown.is_set():
+            shutdown.set()
+            for t in worker_tasks:
+                t.cancel()
 
-        async def updater() -> None:
-            while not stop.is_set():
-                live.update(make_display(task_states, progress, window))
-                await asyncio.sleep(0.25)
+    loop.add_signal_handler(signal.SIGINT, _handle_sigint)
 
-        updater_task = asyncio.create_task(updater())
+    try:
+        with Live(make_display(task_states, progress, window), refresh_per_second=4, console=console, transient=True) as live:
+            stop = asyncio.Event()
 
-        for i, item in enumerate(work_items):
-            await queue.put((i, *item))
-        for _ in range(concurrency):
-            await queue.put(None)
+            async def updater() -> None:
+                while not stop.is_set():
+                    live.update(make_display(task_states, progress, window))
+                    await asyncio.sleep(0.25)
 
-        worker_tasks = [
-            asyncio.create_task(
-                worker(core, queue, results, timeout, task_states, progress, progress_task)
-            )
-            for core in range(concurrency)
-        ]
-        await asyncio.gather(*worker_tasks)
-        stop.set()
-        await updater_task
+            updater_task = asyncio.create_task(updater())
+
+            for i, item in enumerate(work_items):
+                await queue.put((i, *item))
+            for _ in range(concurrency):
+                await queue.put(None)
+
+            worker_tasks[:] = [
+                asyncio.create_task(
+                    worker(core, queue, results, timeout, task_states, progress, progress_task)
+                )
+                for core in range(concurrency)
+            ]
+            await asyncio.gather(*worker_tasks, return_exceptions=True)
+
+            for state in task_states:
+                if state["status"] in ("waiting", "running"):
+                    state["status"] = "cancelled"
+
+            # fill in any tasks that never recorded a result (cancelled, waiting, etc.)
+            recorded = {(dt, sz, alg) for dt, sz, alg, _ in results}
+            for i, (alg, data_type, size) in enumerate(work_items):
+                key = (data_type, str(size), ALGORITHM_NAMES[alg])
+                if key not in recorded:
+                    results.append((data_type, str(size), ALGORITHM_NAMES[alg], {"status": task_states[i]["status"]}))
+
+            stop.set()
+            await updater_task
+    finally:
+        loop.remove_signal_handler(signal.SIGINT)
+
+    if shutdown.is_set():
+        console.print("\n[yellow]Interrupted — partial results saved.[/yellow]")
 
     output: dict = {}
     errors: list[str] = []
     for data_type, size, alg_name, data in results:
         output.setdefault(data_type, {}).setdefault(size, {})[alg_name] = data
-        if data.get("status") in ("error", "timeout"):
+        if data.get("status") in ("error", "timeout", "cancelled"):
             errors.append(f"  {data_type}/{size}/{alg_name}: {data.get('status')} {data.get('message', '')}")
 
-    with open(OUTPUT, "w") as f:
+    epoch = int(time.time())
+    output_path = f"{OUTPUT_DIR}/results-{epoch}.json"
+    with open(output_path, "w") as f:
         json.dump(output, f, indent=2)
 
-    console.print(f"\nResults written to {OUTPUT}")
+    console.print(f"\nResults written to {output_path}")
     if errors:
         console.print(f"\nWarnings ({len(errors)}):")
         console.print("\n".join(errors))
@@ -285,5 +325,19 @@ if __name__ == "__main__":
         "--concurrency", type=int, default=MAX_CONCURRENT,
         help=f"Max concurrent benchmarks (default: {MAX_CONCURRENT})"
     )
+    parser.add_argument(
+        "--types", nargs="+", choices=DATA_TYPES, default=DATA_TYPES,
+        help=f"Input data types to benchmark (default: all)"
+    )
+    parser.add_argument(
+        "--algorithms", nargs="+", choices=list(ALGORITHM_NAMES.values()), default=list(ALGORITHM_NAMES.values()),
+        help="Algorithms to benchmark (default: all)"
+    )
+    parser.add_argument(
+        "--no-timeout", action="store_true",
+        help="Disable per-task timeout and let each task run until completion"
+    )
     args = parser.parse_args()
-    asyncio.run(main(args.sizes, args.timeout, args.concurrency))
+    alg_keys = [k for k, v in ALGORITHM_NAMES.items() if v in args.algorithms]
+    timeout = None if args.no_timeout else args.timeout
+    asyncio.run(main(args.sizes, args.types, alg_keys, timeout, args.concurrency))

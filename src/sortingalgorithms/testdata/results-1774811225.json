@@ -1,0 +1,80 @@
+{
+  "descending": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.8029075824217369,
+        "runtime_stddev_ms": 0.3118223245157734,
+        "runtime_min_ms": 0.5126192800000001,
+        "runtime_max_ms": 4.2474682800000005,
+        "cycles": 235065,
+        "instructions": 154411,
+        "cache_misses": 263,
+        "branch_misses": 2730
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.7637876939710797,
+        "runtime_stddev_ms": 0.23938755711286688,
+        "runtime_min_ms": 0.54512012,
+        "runtime_max_ms": 3.60109812,
+        "cycles": 294115,
+        "instructions": 217068,
+        "cache_misses": 3189,
+        "branch_misses": 2851
+      }
+    }
+  },
+  "ascending": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.8154963318887597,
+        "runtime_stddev_ms": 0.37495733443681206,
+        "runtime_min_ms": 0.5468013400000001,
+        "runtime_max_ms": 8.98574934,
+        "cycles": 236130,
+        "instructions": 154461,
+        "cache_misses": 560,
+        "branch_misses": 2745
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.835456660521327,
+        "runtime_stddev_ms": 0.25724616829844665,
+        "runtime_min_ms": 0.6070964200000002,
+        "runtime_max_ms": 3.8838114200000002,
+        "cycles": 266761,
+        "instructions": 217705,
+        "cache_misses": 217,
+        "branch_misses": 2826
+      }
+    }
+  },
+  "random": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.8110314036567593,
+        "runtime_stddev_ms": 0.32770608832211506,
+        "runtime_min_ms": 0.5305848399999998,
+        "runtime_max_ms": 4.729320840000001,
+        "cycles": 284279,
+        "instructions": 154545,
+        "cache_misses": 749,
+        "branch_misses": 2543
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.8223304539601782,
+        "runtime_stddev_ms": 0.30548333601724437,
+        "runtime_min_ms": 0.5511862200000002,
+        "runtime_max_ms": 4.00823822,
+        "cycles": 275909,
+        "instructions": 221042,
+        "cache_misses": 300,
+        "branch_misses": 3311
+      }
+    }
+  }
+}

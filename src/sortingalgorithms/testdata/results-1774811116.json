@@ -1,0 +1,80 @@
+{
+  "random": {
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.718687330490834,
+        "runtime_stddev_ms": 0.30861586982958533,
+        "runtime_min_ms": 0.44363545999999987,
+        "runtime_max_ms": 5.352513460000001,
+        "cycles": 289018,
+        "instructions": 221042,
+        "cache_misses": 387,
+        "branch_misses": 3235
+      }
+    },
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.7377247259154942,
+        "runtime_stddev_ms": 0.3396718232934519,
+        "runtime_min_ms": 0.4445965800000003,
+        "runtime_max_ms": 4.310318580000001,
+        "cycles": 234396,
+        "instructions": 154543,
+        "cache_misses": 278,
+        "branch_misses": 2760
+      }
+    }
+  },
+  "ascending": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.7190914065857879,
+        "runtime_stddev_ms": 0.3228971634464648,
+        "runtime_min_ms": 0.42849179999999987,
+        "runtime_max_ms": 4.5461858,
+        "cycles": 231039,
+        "instructions": 154459,
+        "cache_misses": 528,
+        "branch_misses": 2779
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.7854095202832875,
+        "runtime_stddev_ms": 0.25656796943982785,
+        "runtime_min_ms": 0.55369682,
+        "runtime_max_ms": 3.60207782,
+        "cycles": 294603,
+        "instructions": 217709,
+        "cache_misses": 3479,
+        "branch_misses": 2746
+      }
+    }
+  },
+  "descending": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.7067452256433403,
+        "runtime_stddev_ms": 0.32142940094199546,
+        "runtime_min_ms": 0.41908122,
+        "runtime_max_ms": 4.66995022,
+        "cycles": 235949,
+        "instructions": 154409,
+        "cache_misses": 567,
+        "branch_misses": 2423
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.8298628404872123,
+        "runtime_stddev_ms": 0.29096800614247575,
+        "runtime_min_ms": 0.5702642400000003,
+        "runtime_max_ms": 4.24043724,
+        "cycles": 266326,
+        "instructions": 217069,
+        "cache_misses": 584,
+        "branch_misses": 2799
+      }
+    }
+  }
+}

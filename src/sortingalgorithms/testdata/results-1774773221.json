@@ -1,0 +1,195 @@
+{
+  "random": {
+    "1000": {
+      "insertion": {
+        "runtime_mean_ms": 1.817578027288316,
+        "runtime_stddev_ms": 0.4145402868174641,
+        "runtime_min_ms": 1.3024026199999998,
+        "runtime_max_ms": 7.623267620000001,
+        "cycles": 2492771,
+        "instructions": 6084507,
+        "cache_misses": 280,
+        "branch_misses": 3653
+      },
+      "merge": {
+        "runtime_mean_ms": 1.0342758301862567,
+        "runtime_stddev_ms": 0.3588733140475228,
+        "runtime_min_ms": 0.5340518000000003,
+        "runtime_max_ms": 3.9046828000000002,
+        "cycles": 899410,
+        "instructions": 1036214,
+        "cache_misses": 1219,
+        "branch_misses": 8055
+      },
+      "quick": {
+        "runtime_mean_ms": 1.0001420841491837,
+        "runtime_stddev_ms": 0.42856454996559723,
+        "runtime_min_ms": 0.5122134000000003,
+        "runtime_max_ms": 4.935208400000001,
+        "cycles": 731467,
+        "instructions": 602623,
+        "cache_misses": 425,
+        "branch_misses": 6948
+      }
+    },
+    "2500": {
+      "insertion": {
+        "runtime_mean_ms": 5.8654598733333305,
+        "runtime_stddev_ms": 0.6020130234046506,
+        "runtime_min_ms": 4.8917367600000015,
+        "runtime_max_ms": 8.55288976,
+        "cycles": 14741793,
+        "instructions": 38585272,
+        "cache_misses": 1350,
+        "branch_misses": 5144
+      },
+      "merge": {
+        "runtime_mean_ms": 1.5937402673819048,
+        "runtime_stddev_ms": 0.40691745605951224,
+        "runtime_min_ms": 0.9317660399999997,
+        "runtime_max_ms": 8.377971040000002,
+        "cycles": 2238723,
+        "instructions": 2543402,
+        "cache_misses": 708,
+        "branch_misses": 17512
+      },
+      "quick": {
+        "runtime_mean_ms": 1.488444130647774,
+        "runtime_stddev_ms": 0.384304682973871,
+        "runtime_min_ms": 0.8280471600000003,
+        "runtime_max_ms": 4.63061716,
+        "cycles": 1248055,
+        "instructions": 1504856,
+        "cache_misses": 108,
+        "branch_misses": 14416
+      }
+    },
+    "5000": {
+      "insertion": {
+        "runtime_mean_ms": 20.382553138787877,
+        "runtime_stddev_ms": 1.3148172645174487,
+        "runtime_min_ms": 18.26959926,
+        "runtime_max_ms": 23.88169826,
+        "cycles": 55926798,
+        "instructions": 149525611,
+        "cache_misses": 2427,
+        "branch_misses": 7716
+      },
+      "merge": {
+        "runtime_mean_ms": 1.8780635000000012,
+        "runtime_stddev_ms": 0.4190323617511246,
+        "runtime_min_ms": 1.3239493799999997,
+        "runtime_max_ms": 4.700709379999999,
+        "cycles": 3232793,
+        "instructions": 5196338,
+        "cache_misses": 718,
+        "branch_misses": 34623
+      },
+      "quick": {
+        "runtime_mean_ms": 1.795986114969326,
+        "runtime_stddev_ms": 0.3943159635450137,
+        "runtime_min_ms": 1.14499098,
+        "runtime_max_ms": 4.8723719800000005,
+        "cycles": 2955954,
+        "instructions": 2723423,
+        "cache_misses": 214,
+        "branch_misses": 29971
+      }
+    },
+    "7500": {
+      "insertion": {
+        "runtime_mean_ms": 43.56253426499998,
+        "runtime_stddev_ms": 2.9502550081967653,
+        "runtime_min_ms": 40.018599640000005,
+        "runtime_max_ms": 56.32707064,
+        "cycles": 125901890,
+        "instructions": 335946170,
+        "cache_misses": 5532,
+        "branch_misses": 10379
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "10000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "25000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "50000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "75000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "250000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "500000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    }
+  }
+}

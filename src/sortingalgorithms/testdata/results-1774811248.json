@@ -1,0 +1,140 @@
+{
+  "ascending": {
+    "10": {
+      "quick": {
+        "runtime_mean_ms": 0.8702638135981587,
+        "runtime_stddev_ms": 0.33837693875292685,
+        "runtime_min_ms": 0.5416360600000003,
+        "runtime_max_ms": 5.232582060000001,
+        "cycles": 231332,
+        "instructions": 151270,
+        "cache_misses": 277,
+        "branch_misses": 2719
+      },
+      "merge": {
+        "runtime_mean_ms": 0.8522943855424407,
+        "runtime_stddev_ms": 0.31772399810750773,
+        "runtime_min_ms": 0.57190372,
+        "runtime_max_ms": 4.45848372,
+        "cycles": 233355,
+        "instructions": 154461,
+        "cache_misses": 487,
+        "branch_misses": 2551
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.9280367670686778,
+        "runtime_stddev_ms": 0.35497913001695536,
+        "runtime_min_ms": 0.6041950200000005,
+        "runtime_max_ms": 5.26913002,
+        "cycles": 350001,
+        "instructions": 217706,
+        "cache_misses": 1054,
+        "branch_misses": 2782
+      },
+      "quick": {
+        "runtime_mean_ms": 0.906986629930519,
+        "runtime_stddev_ms": 0.31473837645233427,
+        "runtime_min_ms": 0.6104355999999999,
+        "runtime_max_ms": 4.372213600000001,
+        "cycles": 281043,
+        "instructions": 180614,
+        "cache_misses": 3185,
+        "branch_misses": 2639
+      }
+    }
+  },
+  "random": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.8534361465540553,
+        "runtime_stddev_ms": 0.31246910445551684,
+        "runtime_min_ms": 0.5641287799999998,
+        "runtime_max_ms": 3.67544678,
+        "cycles": 244733,
+        "instructions": 154538,
+        "cache_misses": 1396,
+        "branch_misses": 2824
+      },
+      "quick": {
+        "runtime_mean_ms": 0.855615842746401,
+        "runtime_stddev_ms": 0.3292081515645337,
+        "runtime_min_ms": 0.5608709999999999,
+        "runtime_max_ms": 4.266742000000001,
+        "cycles": 263025,
+        "instructions": 151546,
+        "cache_misses": 552,
+        "branch_misses": 2414
+      }
+    },
+    "100": {
+      "quick": {
+        "runtime_mean_ms": 0.9223112830382769,
+        "runtime_stddev_ms": 0.31750877084793894,
+        "runtime_min_ms": 0.6108824200000005,
+        "runtime_max_ms": 3.8528954200000007,
+        "cycles": 252972,
+        "instructions": 180728,
+        "cache_misses": 532,
+        "branch_misses": 2779
+      },
+      "merge": {
+        "runtime_mean_ms": 0.8872174356703183,
+        "runtime_stddev_ms": 0.3238208032797065,
+        "runtime_min_ms": 0.5713255400000004,
+        "runtime_max_ms": 5.986991540000001,
+        "cycles": 274453,
+        "instructions": 221041,
+        "cache_misses": 134,
+        "branch_misses": 3040
+      }
+    }
+  },
+  "descending": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.9253867361514199,
+        "runtime_stddev_ms": 0.35295482821888446,
+        "runtime_min_ms": 0.60885988,
+        "runtime_max_ms": 5.023873880000001,
+        "cycles": 229562,
+        "instructions": 154408,
+        "cache_misses": 204,
+        "branch_misses": 2662
+      },
+      "quick": {
+        "runtime_mean_ms": 0.8524403050659632,
+        "runtime_stddev_ms": 0.30083357336850186,
+        "runtime_min_ms": 0.5433071800000002,
+        "runtime_max_ms": 3.9007191800000007,
+        "cycles": 234353,
+        "instructions": 151816,
+        "cache_misses": 927,
+        "branch_misses": 2701
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 0.7824140955021827,
+        "runtime_stddev_ms": 0.4477916334420601,
+        "runtime_min_ms": 0.4465752799999998,
+        "runtime_max_ms": 7.10590628,
+        "cycles": 255962,
+        "instructions": 217069,
+        "cache_misses": 251,
+        "branch_misses": 2866
+      },
+      "quick": {
+        "runtime_mean_ms": 0.7845789894353364,
+        "runtime_stddev_ms": 0.3069053983849391,
+        "runtime_min_ms": 0.49164179999999974,
+        "runtime_max_ms": 4.0189168,
+        "cycles": 295458,
+        "instructions": 179062,
+        "cache_misses": 3651,
+        "branch_misses": 2780
+      }
+    }
+  }
+}

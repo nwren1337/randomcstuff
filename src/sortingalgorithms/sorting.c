@@ -81,6 +81,9 @@ void swap(int *a, int *b) {
 
 // Lomuto partition scheme
 int partition(int arr[], int low, int high) {
+    // clever boy
+    int r = low + rand() % (high - low + 1);
+    swap(&arr[r], &arr[high]);
     // choose the last element as pivot
     int pivot = arr[high];
 

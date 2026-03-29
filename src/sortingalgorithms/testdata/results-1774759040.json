@@ -1,0 +1,70 @@
+{
+  "random": {
+    "10": {
+      "quick": {
+        "runtime_mean_ms": 0.7570321459259274,
+        "runtime_stddev_ms": 0.456261869371682,
+        "runtime_min_ms": 0.37935422000000035,
+        "runtime_max_ms": 4.764699220000001,
+        "cycles": 238527,
+        "instructions": 162262,
+        "cache_misses": 908,
+        "branch_misses": 2726
+      },
+      "insertion": {
+        "runtime_mean_ms": 0.7283712303870387,
+        "runtime_stddev_ms": 0.4996000951379602,
+        "runtime_min_ms": 0.35091336000000006,
+        "runtime_max_ms": 5.455582360000001,
+        "cycles": 347453,
+        "instructions": 161420,
+        "cache_misses": 1163,
+        "branch_misses": 2831
+      },
+      "merge": {
+        "runtime_mean_ms": 0.7448261799722992,
+        "runtime_stddev_ms": 0.46530855417879124,
+        "runtime_min_ms": 0.37882352,
+        "runtime_max_ms": 6.47011352,
+        "cycles": 241353,
+        "instructions": 166107,
+        "cache_misses": 716,
+        "branch_misses": 2598
+      }
+    }
+  },
+  "ascending": {
+    "10": {
+      "insertion": {
+        "runtime_mean_ms": 0.7073853168755213,
+        "runtime_stddev_ms": 0.4817631682739996,
+        "runtime_min_ms": 0.3493489000000001,
+        "runtime_max_ms": 5.0257679,
+        "cycles": 235745,
+        "instructions": 161002,
+        "cache_misses": 710,
+        "branch_misses": 2744
+      },
+      "quick": {
+        "runtime_mean_ms": 0.8655104359579443,
+        "runtime_stddev_ms": 0.4123224182331069,
+        "runtime_min_ms": 0.5538957800000002,
+        "runtime_max_ms": 7.88784078,
+        "cycles": 235314,
+        "instructions": 163562,
+        "cache_misses": 382,
+        "branch_misses": 2616
+      },
+      "merge": {
+        "runtime_mean_ms": 0.92926760981554,
+        "runtime_stddev_ms": 0.4044240226027911,
+        "runtime_min_ms": 0.6226046399999997,
+        "runtime_max_ms": 4.74913264,
+        "cycles": 280685,
+        "instructions": 166045,
+        "cache_misses": 3362,
+        "branch_misses": 2518
+      }
+    }
+  }
+}

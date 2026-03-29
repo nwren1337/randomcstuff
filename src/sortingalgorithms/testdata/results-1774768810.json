@@ -1,0 +1,512 @@
+{
+  "random": {
+    "1000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "2500": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "5000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "7500": {
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "10000": {
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "25000": {
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "50000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "75000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "100000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "250000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "500000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "750000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    }
+  },
+  "ascending": {
+    "1000": {
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "2500": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "5000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "7500": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "10000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "25000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "50000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "75000": {
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "100000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "250000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "500000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "750000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    }
+  },
+  "descending": {
+    "1000": {
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "2500": {
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "5000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "7500": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "10000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "25000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "50000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "75000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "100000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "250000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "500000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    },
+    "750000": {
+      "insertion": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "merge": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      },
+      "quick": {
+        "status": "error",
+        "message": "hyperfine: Error: Command terminated with non-zero exit code: 127. Use the '-i'/'--ignore-failure' option if you want to ignore this. Alternatively, use the '--show-output' option to debug what went wrong."
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "random": {
+    "10": {
+      "insertion": {
+        "runtime_mean_ms": 0.6185062559382609,
+        "runtime_stddev_ms": 0.49537929210131404,
+        "runtime_min_ms": 0.21687325999999985,
+        "runtime_max_ms": 6.88325226,
+        "cycles": 232553,
+        "instructions": 161417,
+        "cache_misses": 179,
+        "branch_misses": 2728
+      },
+      "quick": {
+        "runtime_mean_ms": 0.5965114128326751,
+        "runtime_stddev_ms": 0.4576053707027936,
+        "runtime_min_ms": 0.19174476000000043,
+        "runtime_max_ms": 4.70941976,
+        "cycles": 237795,
+        "instructions": 162265,
+        "cache_misses": 284,
+        "branch_misses": 2730
+      },
+      "merge": {
+        "runtime_mean_ms": 0.7318654283147389,
+        "runtime_stddev_ms": 0.4704313858897129,
+        "runtime_min_ms": 0.3353661399999998,
+        "runtime_max_ms": 4.464873140000001,
+        "cycles": 268152,
+        "instructions": 166107,
+        "cache_misses": 309,
+        "branch_misses": 2692
+      }
+    }
+  },
+  "ascending": {
+    "10": {
+      "insertion": {
+        "runtime_mean_ms": 0.6335791981017472,
+        "runtime_stddev_ms": 0.4743957751286325,
+        "runtime_min_ms": 0.2655957,
+        "runtime_max_ms": 5.2937837000000005,
+        "cycles": 236790,
+        "instructions": 161003,
+        "cache_misses": 584,
+        "branch_misses": 2682
+      },
+      "quick": {
+        "runtime_mean_ms": 0.93348033138756,
+        "runtime_stddev_ms": 0.3979057015345643,
+        "runtime_min_ms": 0.6097646400000001,
+        "runtime_max_ms": 5.99082364,
+        "cycles": 241592,
+        "instructions": 163563,
+        "cache_misses": 448,
+        "branch_misses": 2673
+      },
+      "merge": {
+        "runtime_mean_ms": 0.9126162497342005,
+        "runtime_stddev_ms": 0.3966003848254734,
+        "runtime_min_ms": 0.5835165999999998,
+        "runtime_max_ms": 6.362195600000001,
+        "cycles": 284267,
+        "instructions": 166043,
+        "cache_misses": 4467,
+        "branch_misses": 2760
+      }
+    }
+  }
+}

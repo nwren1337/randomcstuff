@@ -1,0 +1,296 @@
+{
+  "random": {
+    "10": {
+      "merge": {
+        "runtime_mean_ms": 0.7965543145727138,
+        "runtime_stddev_ms": 0.6425258105745933,
+        "runtime_min_ms": 0.3684499599999999,
+        "runtime_max_ms": 9.755431960000001,
+        "cycles": 249485,
+        "instructions": 169512,
+        "cache_misses": 1003,
+        "branch_misses": 2748
+      },
+      "insertion": {
+        "runtime_mean_ms": 0.7976687102961921,
+        "runtime_stddev_ms": 0.6779074616193711,
+        "runtime_min_ms": 0.3461339000000001,
+        "runtime_max_ms": 7.8323869,
+        "cycles": 239148,
+        "instructions": 164822,
+        "cache_misses": 562,
+        "branch_misses": 2775
+      },
+      "quick": {
+        "runtime_mean_ms": 0.8917531407740327,
+        "runtime_stddev_ms": 0.7110711333131893,
+        "runtime_min_ms": 0.44673676000000007,
+        "runtime_max_ms": 12.696305760000001,
+        "cycles": 242160,
+        "instructions": 165668,
+        "cache_misses": 534,
+        "branch_misses": 2788
+      }
+    },
+    "100": {
+      "merge": {
+        "runtime_mean_ms": 1.0499070574647889,
+        "runtime_stddev_ms": 0.48513451446417194,
+        "runtime_min_ms": 0.6352935800000004,
+        "runtime_max_ms": 5.89927658,
+        "cycles": 298458,
+        "instructions": 235886,
+        "cache_misses": 117,
+        "branch_misses": 3190
+      },
+      "insertion": {
+        "runtime_mean_ms": 0.9261749947368422,
+        "runtime_stddev_ms": 0.44839797527295044,
+        "runtime_min_ms": 0.5319503999999999,
+        "runtime_max_ms": 4.9643184,
+        "cycles": 266880,
+        "instructions": 223105,
+        "cache_misses": 1247,
+        "branch_misses": 2558
+      },
+      "quick": {
+        "runtime_mean_ms": 1.0432628200000003,
+        "runtime_stddev_ms": 0.4830549730235928,
+        "runtime_min_ms": 0.6111078200000001,
+        "runtime_max_ms": 7.066264820000001,
+        "cycles": 301404,
+        "instructions": 190931,
+        "cache_misses": 694,
+        "branch_misses": 3057
+      }
+    },
+    "1000": {
+      "insertion": {
+        "runtime_mean_ms": 2.0327405039370077,
+        "runtime_stddev_ms": 0.9572396681963637,
+        "runtime_min_ms": 1.3381070000000002,
+        "runtime_max_ms": 9.292215,
+        "cycles": 2434182,
+        "instructions": 6140569,
+        "cache_misses": 539,
+        "branch_misses": 3624
+      },
+      "merge": {
+        "runtime_mean_ms": 1.4134860805597964,
+        "runtime_stddev_ms": 0.611132544335092,
+        "runtime_min_ms": 0.8954676200000004,
+        "runtime_max_ms": 7.85835562,
+        "cycles": 734754,
+        "instructions": 1047789,
+        "cache_misses": 840,
+        "branch_misses": 8473
+      },
+      "quick": {
+        "runtime_mean_ms": 1.3466642513043465,
+        "runtime_stddev_ms": 0.4940878420341539,
+        "runtime_min_ms": 0.8802162599999999,
+        "runtime_max_ms": 4.1106612600000005,
+        "cycles": 542211,
+        "instructions": 502880,
+        "cache_misses": 401,
+        "branch_misses": 7487
+      }
+    }
+  },
+  "ascending": {
+    "10": {
+      "insertion": {
+        "runtime_mean_ms": 0.9134164814492762,
+        "runtime_stddev_ms": 0.6780185765016907,
+        "runtime_min_ms": 0.4930683799999997,
+        "runtime_max_ms": 10.927672379999999,
+        "cycles": 249292,
+        "instructions": 164406,
+        "cache_misses": 740,
+        "branch_misses": 2754
+      },
+      "merge": {
+        "runtime_mean_ms": 0.7194515230048458,
+        "runtime_stddev_ms": 0.49144800140524714,
+        "runtime_min_ms": 0.33360996,
+        "runtime_max_ms": 4.8815719600000005,
+        "cycles": 478379,
+        "instructions": 169450,
+        "cache_misses": 2372,
+        "branch_misses": 2823
+      },
+      "quick": {
+        "runtime_mean_ms": 0.9774351695893877,
+        "runtime_stddev_ms": 0.45507716557258626,
+        "runtime_min_ms": 0.5806096199999998,
+        "runtime_max_ms": 5.73086562,
+        "cycles": 259233,
+        "instructions": 166966,
+        "cache_misses": 2959,
+        "branch_misses": 2756
+      }
+    },
+    "100": {
+      "insertion": {
+        "runtime_mean_ms": 1.1975147158167572,
+        "runtime_stddev_ms": 0.5004615574262152,
+        "runtime_min_ms": 0.6330230599999996,
+        "runtime_max_ms": 4.630507059999999,
+        "cycles": 243234,
+        "instructions": 167426,
+        "cache_misses": 772,
+        "branch_misses": 2737
+      },
+      "merge": {
+        "runtime_mean_ms": 1.0728353533333346,
+        "runtime_stddev_ms": 0.5400851821386585,
+        "runtime_min_ms": 0.44044511999999997,
+        "runtime_max_ms": 6.21927812,
+        "cycles": 270106,
+        "instructions": 232698,
+        "cache_misses": 460,
+        "branch_misses": 2986
+      },
+      "quick": {
+        "runtime_mean_ms": 1.3680034977495692,
+        "runtime_stddev_ms": 0.5497236725993652,
+        "runtime_min_ms": 0.7109632,
+        "runtime_max_ms": 6.6333042,
+        "cycles": 360354,
+        "instructions": 387108,
+        "cache_misses": 392,
+        "branch_misses": 2913
+      }
+    },
+    "1000": {
+      "insertion": {
+        "runtime_mean_ms": 1.1700588271544718,
+        "runtime_stddev_ms": 0.49587963862764456,
+        "runtime_min_ms": 0.6930828799999997,
+        "runtime_max_ms": 5.718805880000001,
+        "cycles": 260057,
+        "instructions": 197620,
+        "cache_misses": 784,
+        "branch_misses": 2710
+      },
+      "merge": {
+        "runtime_mean_ms": 1.1594102078246744,
+        "runtime_stddev_ms": 0.5463226038178474,
+        "runtime_min_ms": 0.66236422,
+        "runtime_max_ms": 5.26557722,
+        "cycles": 550389,
+        "instructions": 984264,
+        "cache_misses": 533,
+        "branch_misses": 3133
+      },
+      "quick": {
+        "runtime_mean_ms": 4.753458425671641,
+        "runtime_stddev_ms": 0.7149447835885921,
+        "runtime_min_ms": 3.96825156,
+        "runtime_max_ms": 8.981953560000003,
+        "cycles": 13162335,
+        "instructions": 21745067,
+        "cache_misses": 2001,
+        "branch_misses": 4472
+      }
+    }
+  },
+  "descending": {
+    "10": {
+      "insertion": {
+        "runtime_mean_ms": 1.0244039081789134,
+        "runtime_stddev_ms": 0.4754017761110351,
+        "runtime_min_ms": 0.6304708199999999,
+        "runtime_max_ms": 5.579633820000001,
+        "cycles": 237993,
+        "instructions": 165417,
+        "cache_misses": 602,
+        "branch_misses": 2495
+      },
+      "merge": {
+        "runtime_mean_ms": 0.9758384809540837,
+        "runtime_stddev_ms": 0.45068884381458796,
+        "runtime_min_ms": 0.57370828,
+        "runtime_max_ms": 4.892644280000001,
+        "cycles": 253478,
+        "instructions": 169400,
+        "cache_misses": 459,
+        "branch_misses": 2830
+      },
+      "quick": {
+        "runtime_mean_ms": 0.9633356836254519,
+        "runtime_stddev_ms": 0.4747594001941317,
+        "runtime_min_ms": 0.5442446199999998,
+        "runtime_max_ms": 5.03953462,
+        "cycles": 256430,
+        "instructions": 166191,
+        "cache_misses": 1277,
+        "branch_misses": 2751
+      }
+    },
+    "100": {
+      "insertion": {
+        "runtime_mean_ms": 1.461427700904407,
+        "runtime_stddev_ms": 0.552276801631863,
+        "runtime_min_ms": 0.6331268400000002,
+        "runtime_max_ms": 7.150607840000002,
+        "cycles": 491792,
+        "instructions": 285434,
+        "cache_misses": 3383,
+        "branch_misses": 2932
+      },
+      "merge": {
+        "runtime_mean_ms": 1.0541325838759692,
+        "runtime_stddev_ms": 0.7002774817152485,
+        "runtime_min_ms": 0.5418857799999999,
+        "runtime_max_ms": 11.60734878,
+        "cycles": 348320,
+        "instructions": 232058,
+        "cache_misses": 2076,
+        "branch_misses": 2946
+      },
+      "quick": {
+        "runtime_mean_ms": 1.3320881163888891,
+        "runtime_stddev_ms": 0.7258334911749604,
+        "runtime_min_ms": 0.8218850399999997,
+        "runtime_max_ms": 10.12486804,
+        "cycles": 396521,
+        "instructions": 309609,
+        "cache_misses": 746,
+        "branch_misses": 2990
+      }
+    },
+    "1000": {
+      "insertion": {
+        "runtime_mean_ms": 2.797471314504623,
+        "runtime_stddev_ms": 0.5706190465785167,
+        "runtime_min_ms": 2.2081114400000006,
+        "runtime_max_ms": 7.480006440000001,
+        "cycles": 4592255,
+        "instructions": 12177625,
+        "cache_misses": 276,
+        "branch_misses": 3703
+      },
+      "merge": {
+        "runtime_mean_ms": 1.2269102761612274,
+        "runtime_stddev_ms": 0.5044086331965144,
+        "runtime_min_ms": 0.8104202800000002,
+        "runtime_max_ms": 6.288277280000001,
+        "cycles": 540262,
+        "instructions": 981313,
+        "cache_misses": 874,
+        "branch_misses": 3218
+      },
+      "quick": {
+        "runtime_mean_ms": 3.1772726910482527,
+        "runtime_stddev_ms": 0.7947384203778917,
+        "runtime_min_ms": 2.3292303199999997,
+        "runtime_max_ms": 8.115109319999998,
+        "cycles": 6957014,
+        "instructions": 13995066,
+        "cache_misses": 8565,
+        "branch_misses": 4855
+      }
+    }
+  }
+}

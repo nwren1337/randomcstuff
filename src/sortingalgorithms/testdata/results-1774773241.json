@@ -1,0 +1,272 @@
+{
+  "random": {
+    "10": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "1000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "10000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "1000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "10000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    }
+  },
+  "ascending": {
+    "10": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "1000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "10000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "1000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "10000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    }
+  },
+  "descending": {
+    "10": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "1000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "10000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "1000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "10000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    },
+    "100000000": {
+      "insertion": {
+        "status": "cancelled"
+      },
+      "merge": {
+        "status": "cancelled"
+      },
+      "quick": {
+        "status": "cancelled"
+      }
+    }
+  }
+}
